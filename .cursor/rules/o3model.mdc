@@ -1,0 +1,47 @@
+---
+description: 
+globs: 
+---
+
+use open ai o3 model【バイブコーディング cursorルール】
+
+① 現在位置を確認
+```powershell
+Get-Location
+```
+
+② 現在のディレクトリの中身を全て表示（隠しファイル含む）
+```powershell
+Get-ChildItem -Force
+```
+
+③ 必要に応じてディレクトリを作成
+```powershell
+New-Item -ItemType Directory -Name [フォルダ名]
+```
+
+④ ディレクトリを移動
+```powershell
+Set-Location [フォルダ名]
+```
+
+⑤ 改めて現在位置を確認
+```powershell
+Get-Location
+```
+
+⑥ 再度ディレクトリの中身を確認
+```powershell
+Get-ChildItem -Force
+```
+
+【プロンプト例】
+以下をそのままプロンプトに入力します。
+
+「現在のディレクトリ位置は以下の通りです。
+{Get-Locationコマンドの結果}
+
+このディレクトリ内に存在するファイル・フォルダは次の通りです。
+{Get-ChildItem -Forceコマンドの結果}
+
+この状態から作業を開始してください。」
