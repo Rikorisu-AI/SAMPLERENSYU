@@ -3,266 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- サイトのタイトルを編集 -->
-    <title>美食の隠れ家 OMOTENASHI - 公式サイト</title>
-    
-    <!-- Tailwind CSS を読み込み -->
+    <title>バーチャルヒューマンMVの制作講座(概要編)</title>
+    <!-- Tailwind CSSを読み込み -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts (日本語フォント) -->
+    <!-- Google Fonts (Inter & Noto Sans JP)を読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://images.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome (アイコン) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* カスタムスタイル */
+        /* 日本語はNoto Sans JP、英数字はInterを使用 */
         body {
-            font-family: 'Noto Sans JP', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .font-display {
-            font-family: 'Playfair Display', serif;
-        }
-        /* セクションタイトルの下線アニメーション */
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background-color: #c0a080; /* 上品な茶系の色 */
-            margin: 8px auto 0;
-            transition: width 0.3s ease-in-out;
-        }
-        .section-title:hover::after {
-            width: 100px;
-        }
-        /* メニュー画像のホバーエフェクト */
-        .menu-item-image {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .menu-item-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100">
 
-    <!-- ヘッダー -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <!-- お店の名前を編集 -->
-            <h1 class="text-2xl font-bold font-display text-gray-700">美食の隠れ家 OMOTENASHI</h1>
+    <div class="container mx-auto max-w-4xl bg-white shadow-lg">
+
+        <!-- ===== 上部セクション ===== -->
+        <header class="bg-[#0a243a] text-white p-6 md:p-10 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold mb-6">バーチャルヒューマンMVの制作講座(概要編)</h1>
             
-            <!-- PC用ナビゲーション -->
-            <nav class="hidden md:flex space-x-6 text-lg">
-                <a href="#about" class="text-gray-600 hover:text-brown-700 transition">当店について</a>
-                <a href="#menu" class="text-gray-600 hover:text-brown-700 transition">お品書き</a>
-                <a href="#recipe" class="text-gray-600 hover:text-brown-700 transition">秘伝のレシピ</a>
-                <a href="#access" class="text-gray-600 hover:text-brown-700 transition">アクセス</a>
-                <a href="#contact" class="bg-[#c0a080] text-white px-4 py-2 rounded-full hover:bg-[#a08060] transition">ご予約</a>
-            </nav>
-            
-            <!-- モバイル用ハンバーガーボタン -->
-            <button id="mobile-menu-button" class="md:hidden text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        
-        <!-- モバイル用ナビゲーション (最初は非表示) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white p-4">
-            <a href="#about" class="block py-2 text-center text-gray-600 hover:bg-gray-100 rounded">当店について</a>
-            <a href="#menu" class="block py-2 text-center text-gray-600 hover:bg-gray-100 rounded">お品書き</a>
-            <a href="#recipe" class="block py-2 text-center text-gray-600 hover:bg-gray-100 rounded">秘伝のレシピ</a>
-            <a href="#access" class="block py-2 text-center text-gray-600 hover:bg-gray-100 rounded">アクセス</a>
-            <a href="#contact" class="block mt-2 py-2 text-center bg-[#c0a080] text-white rounded-full hover:bg-[#a08060] transition">ご予約</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- ヒーローセクション -->
-        <section id="hero" class="relative h-[60vh] bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
-            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                <div class="text-center text-white p-4">
-                    <!-- メインキャッチコピーを編集 -->
-                    <h2 class="text-4xl md:text-6xl font-display mb-4">一皿に心を込めて。</h2>
-                    <p class="text-lg md:text-xl">旬の食材と職人の技が織りなす、至福のひとときを。</p>
-                </div>
+            <!-- YouTube埋め込み (修正版) -->
+            <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-2xl mb-6">
+                <iframe 
+                    class="w-full aspect-video"
+                    src="https://www.youtube.com/embed/KHSr80Rnm9k" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="YouTube video player">
+                </iframe>
             </div>
-        </section>
 
-        <!-- 当店について -->
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title text-3xl font-bold mb-12">当店について</h2>
-                <!-- お店のコンセプトや説明を編集 -->
-                <p class="max-w-3xl mx-auto text-lg leading-relaxed">
-                    「美食の隠れ家 OMOTENASHI」へようこそ。<br>
-                    私たちは、日本の豊かな四季が育んだ最高の食材を使い、伝統的な技法に現代的な感性を加えたお料理を提供しております。<br>
-                    大切な方とのお食事や、記念日のお祝いなど、お客様の特別な時間がより一層輝くよう、心からのおもてなしをさせていただきます。
-                </p>
-            </div>
-        </section>
+            <p class="text-lg md:text-xl font-semibold mt-8 mb-2">AIでつくられたバーチャルヒューマン動画が<br>700万再生突破しThe North Faceとの提携も決定。</p>
+            <p class="text-base md:text-lg mb-8">今回は、そのきっかけとなったMVの制作過程をお見せします。
+        </header>
 
-        <!-- お品書き -->
-        <section id="menu" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold text-center mb-12">お品書き</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- メニュー項目1 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://images.pexels.com/photos/3297363/pexels-photo-3297363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="豪華な刺身の盛り合わせ" class="w-full h-56 object-cover menu-item-image">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">特選お造り盛り合わせ</h3>
-                            <p class="text-gray-600 mb-4">その日一番の鮮魚を、職人の技で美しく盛り付けます。</p>
-                            <span class="font-bold text-lg text-brown-800">2,800円</span>
-                        </div>
-                    </div>
-                    <!-- メニュー項目2 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://images.pexels.com/photos/361184/pexels-photo-361184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="炭火で焼かれたA5ランク和牛" class="w-full h-56 object-cover menu-item-image">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">A5ランク和牛の炭火焼き</h3>
-                            <p class="text-gray-600 mb-4">とろけるような食感と、凝縮された旨味をご堪能ください。</p>
-                            <span class="font-bold text-lg text-brown-800">4,500円</span>
-                        </div>
-                    </div>
-                    <!-- メニュー項目3 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="彩り豊かな季節野菜の天ぷら" class="w-full h-56 object-cover menu-item-image">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">季節野菜の天ぷら</h3>
-                            <p class="text-gray-600 mb-4">旬の野菜の甘みと香りを、サクサクの衣で閉じ込めました。</p>
-                            <span class="font-bold text-lg text-brown-800">1,500円</span>
-                        </div>
-                    </div>
-                    <!-- 他のメニュー項目も同様に追加 -->
-                </div>
-            </div>
-        </section>
+        <!-- ===== メインコンテンツ ===== -->
+        <main class="p-6 md:p-10">
 
-        <!-- 秘伝のレシピ -->
-        <section id="recipe" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold text-center mb-12">ご家庭で楽しむ秘伝のレシピ</h2>
-                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-inner">
-                    <!-- レシピ名 -->
-                    <h3 class="text-2xl font-bold mb-6 text-center text-brown-800">究極の出汁巻き卵</h3>
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <!-- 材料 -->
-                        <div class="md:w-1/3">
-                            <h4 class="text-xl font-semibold mb-4 border-b-2 border-brown-200 pb-2">材料（2人分）</h4>
-                            <ul class="list-disc list-inside space-y-2">
-                                <li>卵：4個</li>
-                                <li>出汁：80ml</li>
-                                <li>薄口醤油：小さじ1</li>
-                                <li>みりん：小さじ2</li>
-                                <li>塩：少々</li>
-                                <li>サラダ油：適量</li>
-                            </ul>
-                        </div>
-                        <!-- 作り方 -->
-                        <div class="md:w-2/3">
-                            <h4 class="text-xl font-semibold mb-4 border-b-2 border-brown-200 pb-2">作り方</h4>
-                            <ol class="list-decimal list-inside space-y-3">
-                                <li>ボウルに卵を割り入れ、白身を切るように軽く溶きほぐす。</li>
-                                <li>出汁、薄口醤油、みりん、塩を加えて混ぜ合わせる。</li>
-                                <li>卵焼き器を中火で熱し、油を薄くひく。</li>
-                                <li>卵液の1/4を流し入れ、半熟状になったら奥から手前に巻く。</li>
-                                <li>巻いた卵を奥に寄せ、空いたスペースに油をひき、残りの卵液を数回に分けて流し入れ同様に巻いていく。</li>
-                                <li>焼き上がったら巻きすに取り、形を整えて完成。</li>
-                            </ol>
-                        </div>
+            <!-- 講師紹介セクション -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold text-center text-gray-800 border-b-2 border-green-500 pb-3 mb-8">ウェビナー講師</h2>
+                <div class="flex flex-col md:flex-row items-center bg-gray-50 p-6 rounded-lg">
+                    <div class="md:w-1/4 mb-6 md:mb-0 md:mr-8 text-center">
+                        <!-- 講師の画像を更新 -->
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczOGChihoSXdH0Pz0OCp8kJhBe10RYPL566lStOCQtWV7pzypvrkpQ6JJwGjwpKdGQu84OSEUFO_oVpEF3VDHBmvPHe8nIDGn26QIaeydfJ8cMQVotf_=w2400" alt="講師の写真 汗青 HQ" class="rounded-full mx-auto w-32 h-32 md:w-40 md:h-40 object-cover shadow-md">
+                        <h3 class="text-xl font-bold mt-4 text-gray-900">汗青 HQ</h3>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-gray-700 leading-relaxed">
+                            AIクリエイター。AIシンガー「Yuri」の運営に専念しており、デビュー曲「Surreal」は、1ヶ月足らずで700万回再生を突破。それをきっかけにしてTHE NORTH FACEがYuriのスポンサーとなった。
+                            <br>Intel、Kling、Miskeyといった企業コラボレーションでの実績もあり、AI Musicに特化したストーリー・テリング・マーケティング制作を精力的に行っている。
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- アクセス -->
-        <section id="access" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold text-center mb-12">アクセス</h2>
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <!-- Google Map -->
-                    <div class="w-full h-96 rounded-lg shadow-lg overflow-hidden">
-                        <!-- ここにお店のGoogle Map埋め込みコードを貼り付け -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.419992329302!2d136.9048035152449!3d35.17092148031608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d01b979555%3A0x884a3e5e4e8b6151!2z5ZCN5Y-k5bGL!5e0!3m2!1sja!2sjp!4v1687165738555!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <!-- 住所・交通案内 -->
-                    <div class="text-lg">
-                        <h3 class="text-2xl font-bold mb-4">美食の隠れ家 OMOTENASHI</h3>
-                        <!-- お店の住所を編集 -->
-                        <p class="mb-4"><i class="fas fa-map-marker-alt mr-2 text-brown-700"></i>〒100-0005 東京都千代田区丸の内１丁目</p>
-                        <h4 class="font-bold mt-6 mb-2">電車でお越しの場合</h4>
-                        <!-- 最寄り駅からのアクセスを編集 -->
-                        <p>JR「東京駅」丸の内中央口より徒歩1分</p>
-                        <p>東京メトロ丸ノ内線「東京駅」より直結</p>
-                        <h4 class="font-bold mt-6 mb-2">お車でお越しの場合</h4>
-                        <p>近隣のコインパーキングをご利用ください。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- 連絡先・営業時間 -->
-        <section id="contact" class="py-20 bg-gray-800 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title text-3xl font-bold mb-12">ご予約・お問い合わせ</h2>
-                <div class="max-w-2xl mx-auto">
-                    <p class="text-xl mb-4">お電話でのご予約・お問い合わせはこちら</p>
-                    <!-- 電話番号を編集 -->
-                    <a href="tel:03-1234-5678" class="text-4xl font-bold font-display text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-                        <i class="fas fa-phone mr-2"></i>03-1234-5678
-                    </a>
-                    <div class="mt-10 pt-10 border-t border-gray-600">
-                        <h3 class="text-xl font-bold mb-4">営業時間</h3>
-                        <!-- 営業時間を編集 -->
-                        <p>【昼の部】11:30～14:30 (L.O. 14:00)</p>
-                        <p>【夜の部】17:30～22:30 (L.O. 22:00)</p>
-                        <p class="mt-2">【定休日】日曜日・祝日</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- フッター -->
-    <footer class="bg-gray-900 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 美食の隠れ家 OMOTENASHI. All Rights Reserved.</p>
-        </div>
-    </footer>
+            </section>
 
-    <script>
-        // モバイルメニューの開閉機能
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+            <!-- 申込みフォームを削除し、申込みボタンを設置 -->
+            <section class="text-center">
+                <h2 class="text-2xl font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-3 mb-8">お申込みはこちら</h2>
+                <p class="text-gray-700 mb-8">以下のボタンよりお申込みページへお進みください。</p>
+                <a href="https://page.theapps.jp/charge/wrdI8L0EtIDpRFRdxMrAlw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-xl font-bold py-4 px-16 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    申込みページへ
+                </a>
+            </section>
+        </main>
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        <!-- ===== フッター ===== -->
+        <footer class="text-center p-6 bg-gray-800 text-gray-400 text-sm">
+            <p>Copyright(c) 2025 バーチャルヒューマンMVの制作講座運営事務局 All Rights Reserved.</p>
+        </footer>
 
-        // ナビゲーションリンクをクリックしたらメニューを閉じる
-        const navLinks = document.querySelectorAll('#mobile-menu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
+    </div>
 
-        // スクロール時にヘッダーの背景を変更する
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('bg-white/90', 'backdrop-blur-sm');
-            } else {
-                header.classList.remove('bg-white/90', 'backdrop-blur-sm');
-            }
-        });
-    </script>
 </body>
 </html>
-
