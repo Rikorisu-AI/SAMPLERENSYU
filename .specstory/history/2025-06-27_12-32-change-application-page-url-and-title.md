@@ -1101,9 +1101,59 @@ Gitを更新します。まず変更されたファイルを確認し、Gitに�
 
 ---
 
+```bash
+git status
+```
+
+```
+PS C:\Users\magic\Desktop\cursor\satorinomori> git status
+On branch develop
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .specstory/history/2025-06-27_12-32-change-application-page-url-and-title.md
+        modified:   index.html
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\magic\Desktop\cursor\satorinomori>
+```
+
+---
+
+```bash
+git add .
+```
+
+```
+PS C:\Users\magic\Desktop\cursor\satorinomori>
+```
+
+---
+
+```bash
+git commit -m "HTML構造を改善: 講師紹介と講義内容セクションを追加、日程を7/15に更新"
+```
+
+```
+PS C:\Users\magic\Desktop\cursor\satorinomori> git commit -m "HTML構造を改善: 講師紹介と講義内容セクションを
+追加、日程を7/15に更新"
+[develop e66d903] HTML構造を改善: 講師紹介と講義内容セクションを追加、日程を7/15に更新
+ 2 files changed, 559 insertions(+), 8 deletions(-)
+PS C:\Users\magic\Desktop\cursor\satorinomori>
+```
+
+---
+
 
 
 ---
+
+_**User**_
+
+日程は7/14（火）です。修正
+
+---
+
+_**Assistant**_
 
 
 
